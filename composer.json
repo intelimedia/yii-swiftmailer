@@ -18,7 +18,7 @@
   ],
   "require": {
     "yiisoft/yii": ">=1.1.14",
-    "swiftmailer/swiftmailer": "~5.0"
+    "swiftmailer/swiftmailer": "~6.0"
   },
   "autoload": {
     "psr-4": {
