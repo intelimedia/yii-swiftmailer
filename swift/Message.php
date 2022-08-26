@@ -250,7 +250,7 @@ class Message extends BaseMessage
      */
     public function attachContent($content, array $options = [])
     {
-        $attachment = \Swift_Attachment::newInstance($content);
+        $attachment = new \Swift_Attachment($content);
         if (!empty($options['fileName'])) {
             $attachment->setFilename($options['fileName']);
         }
