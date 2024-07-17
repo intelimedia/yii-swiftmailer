@@ -283,7 +283,7 @@ class Message extends BaseMessage
      */
     public function embedContent($content, array $options = [])
     {
-        $embedFile = \Swift_EmbeddedFile::newInstance($content);
+        $embedFile = new \Swift_EmbeddedFile($content);
         if (!empty($options['fileName'])) {
             $embedFile->setFilename($options['fileName']);
         }
